@@ -16,7 +16,8 @@ function fetchPosts(key, callback) {
         user: "WebChat",
         password: "WebChat",
         options: {
-            enableArithAbort: true
+            enableArithAbort: true,
+            encrypt: false
         }
     }, (err, pool) => { // callback connection to the database
         if(err) {
